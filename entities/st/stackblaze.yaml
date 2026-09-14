@@ -1,0 +1,60 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m2gxymw6ktb5x58q85tsc3zz
+  slug: stackblaze
+  slug_aliases: []
+  name: StackBlaze
+  domains:
+    - value: stackblaze.com
+      role: primary
+      valid_from: 2026-09-14T21:40:00.000Z
+  category: hosting-infra
+profile:
+  summary: Cloud platform for deploying applications, databases, storage, and services on Kubernetes-backed infrastructure.
+  description: StackBlaze is a cloud platform for deploying applications, databases, storage, and services on Kubernetes-backed infrastructure.
+  links:
+    site: https://www.stackblaze.com/
+sources:
+  - source_id: src_adf0d6c435d30ce79aec063389135207e7858424b167d8b709f7476f078f7b9d
+    url: https://www.stackblaze.com/startups
+programs: []
+offers:
+  - offer_id: off_01m2gxymw6yvn2zw911atj8drj
+    offer_slug: stackblaze-startup-credit
+    offer_slug_aliases: []
+    title: $500 in StackBlaze platform credit for startups
+    summary: Approved early-stage startups receive $500 in StackBlaze platform credit for compute, databases, storage, and bandwidth, valid for 12 months.
+    lifecycle:
+      status: active
+      effective_from: 2026-09-14T21:40:00.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: $500 in StackBlaze platform credit
+          duration:
+            kind: exact
+            value: P1Y
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 50000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Applicant must be an early-stage startup, typically pre-seed through Series A, and be approved by StackBlaze.
+    roles:
+      terms_authority_entity_id: ent_01m2gxymw6ktb5x58q85tsc3zz
+      access_operator_entity_id: ent_01m2gxymw6ktb5x58q85tsc3zz
+    access:
+      availability: public
+      method: form
+      url: https://www.stackblaze.com/startups
+      instructions: Apply using the startup credit form and use the same email for the StackBlaze account so approved credit can be applied.
+    source_ids:
+      - src_adf0d6c435d30ce79aec063389135207e7858424b167d8b709f7476f078f7b9d
